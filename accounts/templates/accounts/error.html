@@ -1,0 +1,11 @@
+{% extends "accounts/base.html" %}
+
+{% block title %}Error de autenticación - SuperSegurApp{% endblock %}
+
+{% block content %}
+<div class="card error">
+  <h1>🛑 Error!</h1>
+  <p>{{ message|default:"¿Qué pasó? No tengo idea." }}</p>
+  <a class="button" href="{% url 'home' %}">Volver al inicio</a>
+</div>
+{% endblock %}
