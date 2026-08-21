@@ -27,9 +27,7 @@ def create_default_user(apps, schema_editor):
     }
     OIDCProfile.objects.create(user=user, claims=claims)
 
-    print("\n" + "=" * 60)
     print(f"Usuario por defecto creado: {email}")
-    print("=" * 60 + "\n")
 
 
 def remove_default_user(apps, schema_editor):
